@@ -1,0 +1,15 @@
+import re
+
+string = "sebua semangka kata selebihnya"
+
+pola = r"se\w+"
+
+tampilan = re.findall(pola,string)
+print(tampilan)
+
+
+
+
+s = 'Alamatku adalah annas-f@google.com'
+cocok = re.findall(r'([\w,-]+)@([\w.-]+)',s)
+print(cocok)

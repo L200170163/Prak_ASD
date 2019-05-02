@@ -1,0 +1,8 @@
+import re
+
+f=open('KEI.html', 'r', encoding='latin1')
+teks=f.read()
+f.close()
+p=r'di \w+'
+strings = re.findall(p, teks)
+print(strings)
